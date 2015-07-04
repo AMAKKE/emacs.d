@@ -15,6 +15,14 @@
   (after-load 'nxml-mode
     (define-key nxml-mode-map (kbd "M-h") nil))
   (global-set-key (kbd "M-ˍ") 'ns-do-hide-others) ;; what describe-key reports for cmd-option-h
+  ;;bind tilde to combination
+  (global-set-key (kbd "C-x z") '(lambda () (interactive) (insert "~")))
+
+  ;;bind tilde to combination
+  (global-set-key (kbd "M-à") '(lambda () (interactive) (insert "#")))
+
+  ;;bind @ to combination
+  (global-set-key (kbd "M-ò") '(lambda () (interactive) (insert "@")))
   )
 
 
