@@ -12,6 +12,12 @@
 
 (define-key my-keys-minor-mode-map (kbd "M-k") 'kill-this-buffer)
 
+;; pretty replace using anzu
+(require 'anzu)
+(global-anzu-mode)
+(global-set-key (kbd "M-%") 'anzu-query-replace)
+(global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
+
 ;; -----------------
 (define-minor-mode my-keys-minor-mode
   "A minor mode so that my key settings override annoying major modes."
