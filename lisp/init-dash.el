@@ -14,7 +14,7 @@
   (when (sanityinc/dash-installed-p)
     (require-package 'dash-at-point)))
 
-(when (package-installed-p 'dash-at-point)
+(when (and *is-a-mac* (package-installed-p 'dash-at-point))
   (global-set-key (kbd "C-c D") 'dash-at-point))
 
 (provide 'init-dash)
