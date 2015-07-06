@@ -5,6 +5,12 @@
   (global-set-key [remap query-replace-regexp] 'anzu-query-replace-regexp)
   (global-set-key [remap query-replace] 'anzu-query-replace))
 
+  ;; pretty replace using anzu
+  (require 'anzu)
+  (global-anzu-mode)
+  (global-set-key (kbd "M-%") 'anzu-query-replace)
+  (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
+
 ;; Activate occur easily inside isearch
 (define-key isearch-mode-map (kbd "C-o") 'isearch-occur)
 
