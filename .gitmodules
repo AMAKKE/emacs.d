@@ -1,0 +1,3 @@
+[submodule "lisp/pkg/transpose-frame"]
+	path = lisp/pkg/transpose-frame
+	url = https://github.com/emacsmirror/transpose-frame.git
