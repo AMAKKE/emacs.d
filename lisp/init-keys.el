@@ -8,7 +8,7 @@
 
 ;; transpose frame
 (require 'transpose-frame)
-(define-key my-keys-minor-mode-map (kbd "C-t") 'flop-frame)
+(define-key my-keys-minor-mode-map (kbd "M-s") 'flop-frame)
 
 (define-key my-keys-minor-mode-map (kbd "M-k") 'kill-this-buffer)
 
