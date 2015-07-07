@@ -7,6 +7,7 @@
 (define-key my-keys-minor-mode-map (kbd "M-P") 'vc-version-ediff)
 
 ;; transpose frame
+(add-to-list 'load-path (expand-file-name "transpose-frame" *pkg-root*))
 (require 'transpose-frame)
 (define-key my-keys-minor-mode-map (kbd "C-<tab>") 'flop-frame)
 
