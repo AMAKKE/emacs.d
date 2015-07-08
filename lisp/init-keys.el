@@ -11,7 +11,12 @@
 (require 'transpose-frame)
 (define-key my-keys-minor-mode-map (kbd "C-<tab>") 'flop-frame)
 
+;; M-k kill buffer
 (define-key my-keys-minor-mode-map (kbd "M-k") 'kill-this-buffer)
+
+;; same behaviour of C-right/C-left just because I like it!!
+(define-key my-keys-minor-mode-map (kbd "<M-left>") 'left-word)
+(define-key my-keys-minor-mode-map (kbd "<M-right>") 'right-word)
 
 ;; -----------------
 (define-minor-mode my-keys-minor-mode
