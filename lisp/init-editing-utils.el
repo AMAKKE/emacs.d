@@ -35,6 +35,9 @@
 
 (transient-mark-mode t)
 
+;; Ediff ignore whitespace
+(setq-default ediff-diff-options "-w")
+
 
 ;;; Whitespace
 
