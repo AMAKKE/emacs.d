@@ -1,5 +1,4 @@
 (defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
-
 ;; transpose lines
 (define-key my-keys-minor-mode-map (kbd "C-q") 'transpose-lines)
 
@@ -17,6 +16,11 @@
 ;; same behaviour of C-right/C-left just because I like it!!
 (define-key my-keys-minor-mode-map (kbd "<M-left>") 'left-word)
 (define-key my-keys-minor-mode-map (kbd "<M-right>") 'right-word)
+
+;; scroll down line by line using M-arrows
+(setq scroll-preserve-screen-position 1)
+(global-set-key [M-down]  (kbd "C-u 1 C-v"))
+(global-set-key [M-up]  (kbd "C-u 1 M-v"))
 
 ;; -----------------
 (define-minor-mode my-keys-minor-mode
