@@ -1,6 +1,6 @@
 (defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
 ;; transpose lines
-(define-key my-keys-minor-mode-map (kbd "C-q") 'transpose-lines)
+(define-key my-keys-minor-mode-map (kbd "M-q") 'transpose-lines)
 
 ;; compare with previous version
 (define-key my-keys-minor-mode-map (kbd "M-P") 'vc-version-ediff)
