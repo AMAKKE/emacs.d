@@ -98,6 +98,7 @@
 (require 'init-paredit)
 (require 'init-lisp)
 (require 'init-slime)
+(require 'init-abbreviation)
 (when (>= emacs-major-version 24)
   (require 'init-clojure)
   (require 'init-clojure-cider))
