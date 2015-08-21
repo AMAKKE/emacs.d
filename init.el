@@ -1,4 +1,3 @@
-
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
 
@@ -99,6 +98,8 @@
 (require 'init-lisp)
 (require 'init-slime)
 (require 'init-abbreviation)
+(require 'init-shrink-whitespace)
+
 (when (>= emacs-major-version 24)
   (require 'init-clojure)
   (require 'init-clojure-cider))
