@@ -13,7 +13,7 @@
 (define-key my-keys-minor-mode-map (kbd "<C-right>") 'right-word)
 
 
-(add-auto-mode 'html-mode "\\.(jsp|tmpl)\\'")
+(add-auto-mode 'html-mode "\\.\\(jsp\\|tmpl\\)\\'")
 
 ;; Note: ERB is configured in init-ruby-mode
 
