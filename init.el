@@ -99,6 +99,7 @@
 (require 'init-slime)
 (require 'init-abbreviation)
 (require 'init-shrink-whitespace)
+(require 'init-docker)
 
 (when (>= emacs-major-version 24)
   (require 'init-clojure)
