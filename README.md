@@ -56,6 +56,14 @@ packages will be automatically downloaded and installed. If you
 encounter any errors at that stage, try restarting Emacs, and possibly
 running `M-x package-refresh-contents` before doing so.
 
+## Additional Packages
+### Python
+In order to have highlight Python syntax, style and unit test errors you
+want to install pyLint:
+```
+pip install pylint
+```
+
 ## Important note about `ido`
 
 This config enables `ido-mode` completion in the minibuffer wherever
