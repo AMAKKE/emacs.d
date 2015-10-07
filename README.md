@@ -60,9 +60,11 @@ running `M-x package-refresh-contents` before doing so.
 ### Python
 In order to have highlight Python syntax, style and unit test errors you
 want to install pyLint:
-```
-pip install pylint
-```
+* pep8.py
+* PyChecker
+* PyLint
+* PyFlakes
+* nose
 
 ## Important note about `ido`
 
